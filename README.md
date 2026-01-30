@@ -17,9 +17,17 @@ A minimal, self-contained bash dashboard for monitoring a home media server. Dis
 
 ## Install
 
+### Homebrew
+
 ```bash
 brew tap embmeals/tap
 brew install terminal-dashboard
+```
+
+### RubyGems (GitHub Packages)
+
+```bash
+gem install terminal-dashboard --source "https://rubygems.pkg.github.com/embmeals"
 ```
 
 ## Requirements
@@ -31,7 +39,7 @@ brew install terminal-dashboard
 
 ## Configuration
 
-All settings are at the top of `dashboard.sh`:
+All settings are at the top of `lib/dashboard.sh`:
 
 | Variable | Default | Description |
 |---|---|---|
@@ -57,8 +65,8 @@ terminal-dashboard
 Or run directly from source:
 
 ```bash
-chmod +x dashboard.sh
-./dashboard.sh
+chmod +x lib/dashboard.sh
+./lib/dashboard.sh
 ```
 
 Press `Ctrl+C` to exit. The terminal is automatically reset on exit.
