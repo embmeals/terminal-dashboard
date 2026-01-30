@@ -15,6 +15,13 @@ A minimal, self-contained bash dashboard for monitoring a home media server. Dis
 - Auto-refresh every 60 seconds
 - Animated cat patrols the bottom of the terminal
 
+## Install
+
+```bash
+brew tap embmeals/tap
+brew install terminal-dashboard
+```
+
 ## Requirements
 
 - macOS (uses `defaults read`, `pgrep`, `tput`)
@@ -42,6 +49,12 @@ export QBIT_PASS="yourpassword"
 ```
 
 ## Usage
+
+```bash
+terminal-dashboard
+```
+
+Or run directly from source:
 
 ```bash
 chmod +x dashboard.sh
