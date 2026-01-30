@@ -1,4 +1,5 @@
 #!/bin/bash
+# shellcheck disable=SC2059
 
 PLEX_URL="http://localhost:32400"
 PLEX_TOKEN="${PLEX_TOKEN:-$(defaults read com.plexapp.plexmediaserver PlexOnlineToken 2>/dev/null)}"
