@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "terminal-dashboard"
-  s.version     = "1.0.0"
+  s.version     = "1.0.1"
   s.summary     = "Terminal-based media server status dashboard with cat animation"
   s.description = "A minimal, self-contained bash dashboard for monitoring a home media server. " \
                   "Displays service health, disk usage, active Plex streams, download speed, " \
