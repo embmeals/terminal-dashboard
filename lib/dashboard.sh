@@ -44,12 +44,12 @@ check_services() {
 }
 
 check_disk() {
-    if mount | grep -q Seagate_Ext; then
+    if mount | grep -q Saved_Media; then
         local disk_info
-        disk_info=$(df -h /Volumes/Seagate_Ext | awk 'NR==2{gsub(/%/,"%%",$5); print $5}')
-        printf "${YELLOW}║${NC} Seagate:   ${GREEN}${disk_info}${NC}${CL}${RC}${YELLOW}║${NC}\n"
+        disk_info=$(df -h /Volumes/Saved_Media | awk 'NR==2{gsub(/%/,"%%",$5); print $5}')
+        printf "${YELLOW}║${NC} Storage:   ${GREEN}${disk_info}${NC}${CL}${RC}${YELLOW}║${NC}\n"
     else
-        printf "${YELLOW}║${NC} Seagate:   ${DIM}NOT CONNECTED${NC}${CL}${RC}${YELLOW}║${NC}\n"
+        printf "${YELLOW}║${NC} Storage:   ${DIM}NOT CONNECTED${NC}${CL}${RC}${YELLOW}║${NC}\n"
     fi
 }
 
